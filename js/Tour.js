@@ -55,12 +55,12 @@ crbo: function(position, id){
   e1.setAttribute("visible", true)
   e1.setAttribute("geometry", {
     primitive:"plane",
-       
+    width:15,
+    height:21,
   })
   e1.setAttribute("position", position)
   e1.setAttribute("material", {
     color:"#0077cc",
-    opacity:1,
   })
   return e1
 },
@@ -70,9 +70,10 @@ crtn: function(item){
   n1.setAttribute("visible", true)
   n1.setAttribute("geometry", {
     primitive:"plane", 
-    width:"14",
-    height:"20"
+    width:14,
+    height:20
   })
+  n1.setAttribute("position", {x:0,y:0,z:0.1})
   n1.setAttribute("material", {
     src:item.url
   })
